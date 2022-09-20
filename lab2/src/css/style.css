@@ -1,0 +1,58 @@
+/* Груповий селектор */
+
+html,
+body {
+    width: 100%;
+    padding-left: 10px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    min-height: 100%;
+    scroll-behavior: smooth;
+    word-break: break-word;
+}
+
+img {
+    border: 1px solid rgb(45, 156, 200);   
+}
+
+input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus { /* Властивість focus */
+    border: 3px solid #555;
+}
+
+
+/* Селектор по класу */
+
+.signature {
+    text-align: center;
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.image .img1 {
+    border-radius: 35%;
+    opacity: 80%;
+}
+
+a:visited { /* Вибіркові селектори */
+    color: rgb(25, 46, 210);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.hyperlinks {
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Селектор по ID */
+
+#format1 {
+    color: red;
+    text-align: center;
+}
