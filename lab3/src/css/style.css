@@ -1,0 +1,27 @@
+html,
+body {
+    width: 100%;
+    padding-left: 10px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    min-height: 100%;
+    scroll-behavior: smooth;
+    word-break: break-word;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: rgb(25, 185, 185);
+}
+
+.centered {
+    font-family: "interface";
+    font-size: 21px;
+    font-weight: 400;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
