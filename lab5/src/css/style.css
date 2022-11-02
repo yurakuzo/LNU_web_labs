@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h3
+
+p {
+    font-size: 22px;
+}
+
+.container div{
+    width: 190px;
+}
+
+#image {
+    display: none;
+}
+
+#more {
+    color: #deb887;
+    display: none;
+}
+
+

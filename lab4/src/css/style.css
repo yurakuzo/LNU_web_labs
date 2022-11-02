@@ -1,0 +1,44 @@
+html,
+body {
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #000fff, #1ad0dd);
+    /* text-align: left; */
+}
+.flex-container {
+    background-color: transparent;
+    /* background-image: inherit; */
+    font-size: 40px;
+    display: flex;
+    
+    flex: content;
+    align-self:stretch;
+    flex-direction: column; /* 1 */
+    flex-wrap: wrap; /* 2 */
+    justify-content: center; /* 3 */
+    align-items: baseline; /* 4 */
+    align-content: stretch; /* 5 */ 
+}
+
+.flex-container img{
+    width: 140px;
+}
+
+.flex-container .box p {
+    font-size: 14px;
+}
+
+.flex-container .box {
+    text-align: center;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 10px lightblue;
+    background-color: rgb(111, 212, 190);
+    border-radius: 10px;
+}
+
+/* .flex-container .box:nth-child(1){
+    align-items: center;
+    font-size: 20px;
+}
+

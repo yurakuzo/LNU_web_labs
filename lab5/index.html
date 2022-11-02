@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Lab 5</title>
+</head>
+<body>
+    <div class="container">
+        <script src="./src/js/main.js"></script>
+
+        <div class="task-1" id="task-1">
+            <h1>Task 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
+                <span id="dots">...</span>
+                <span id="more">erisque enim ligula venenatis dolor. 
+                    Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. 
+                    Fusce luctus vestibulum augue ut aliquet. 
+                    Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                    In at libero sed nunc venenatis imperdiet sed ornare turpis. 
+                    Donec vitae dui eget tellus gravida venenatis. 
+                    Integer fringilla congue eros non fermentum. 
+                    Sed dapibus pulvinar nibh tempor porta.
+                </span>
+            </p>
+            <button onclick="task1()" id="myBtn">Read more</button>
+        </div>
+
+        <div class="task-2" id="task-2">
+            <h1>Task 2</h1>
+            <button onclick="task2()" id="myBtn2">Read more</button>
+        </div>
+
+        <div class="task-3" id="task-3">
+            <h1>Task 3</h1>
+            <img id="image_LNU" src="./src/img/LNU.jpg" onclick="task3()">
+            <!-- <button onclick="task3()" id="myBtn3">Open image</button> -->
+        </div>
+        
+        <div class="task-4" id="task-4">
+            <h1>Task 4</h1>
+            <input id="source" type="number" onchange="task4(this.value)"><p id="output">відповідь</p>
+            
+        </div>
+
+        <div class="task-5" id="task-5">
+            <h1>Task 5</h1>
+
+            <h2>Date 1</h2>
+            <p id="date1"></p>
+            <script>
+                var date = new Date();
+                document.getElementById("date1").innerHTML = date;
+            </script>
+
+            <h2>Date 2</h2>
+            <p id="date2"></p>
+            <script>
+                var date = new Date();
+                var current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+                document.getElementById("date2").innerHTML = current_date;
+            </script>
+
+            <h2>Date 3</h2>
+            <p id="date3"></p>
+            <script>
+                var date = new Date();
+                var current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+                var current_time = date.getHours()+":"+date.getMinutes()+":"+ date.getSeconds();
+                var date_time = current_date+" "+current_time;	
+                document.getElementById("date3").innerHTML = date_time;
+            </script>
+            
+        </div>
+    
+    </div>
+</body>
+</html>
