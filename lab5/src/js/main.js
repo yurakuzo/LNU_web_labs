@@ -40,22 +40,12 @@ function task2() {
 function task3() {
     var largeImage = document.getElementById('image_LNU');
     largeImage.style.display = 'block';
-    // largeImage.style.width=200+"px";
-    // largeImage.style.height=200+"px";
     var url=largeImage.getAttribute('src');
     window.open(url,'Image','width=largeImage.stylewidth,height=largeImage.style.height,resizable=1');
-
-
-    // var image = document.getElementById("image_LNU");
-
-    // image.style.width = 1000+"px";
-    // window.open(url, 'Image', 'width=image.stylewidth,height=image.style.height,resizable=1');
 }
 
 function task4(value) {
     document.getElementById("output").innerHTML = "$" + value + " ~> " + value * 37 + " UAH";
-    // alert("$" + value + " --> " + value * 37 + " UAH")
-
 }
 
 
